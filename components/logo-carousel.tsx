@@ -9,7 +9,7 @@ export function LogoCarousel() {
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
               <figure className="w-[170px]">
                 <Image
-                  src="https://we-teach.fr/wp-content/uploads/2024/12/logo-2-300x250.png"
+                  src="/logo-2-300x250.png"
                   alt="logo 2"
                   width={170}
                   height={142}
@@ -18,7 +18,7 @@ export function LogoCarousel() {
               </figure>
               <figure className="w-[170px]">
                 <Image
-                  src="https://we-teach.fr/wp-content/uploads/2024/12/logo-3-300x250.png"
+                  src="/logo-3-300x250.png"
                   alt="logo 3"
                   width={170}
                   height={142}
@@ -27,7 +27,7 @@ export function LogoCarousel() {
               </figure>
               <figure className="w-[170px]">
                 <Image
-                  src="https://we-teach.fr/wp-content/uploads/2024/12/logo-1-1-300x250.png"
+                  src="/logo-1-1-300x250.png"
                   alt="logo 1"
                   width={170}
                   height={142}
