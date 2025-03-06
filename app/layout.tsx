@@ -21,6 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
+      <head>
+        <link rel="icon" href="/favicon.png" type="image/png" />
+      </head>
       <body className="font-tomato flex flex-col min-h-screen">
         <Header />
         <main className="flex-1">{children}</main>
