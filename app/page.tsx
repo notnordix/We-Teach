@@ -168,7 +168,7 @@ export default function Home() {
               <div className="aspect-square relative overflow-hidden">
                 <Image src="/assistant-650x650.png" alt="Assistant(e) de direction" fill className="object-cover" />
               </div>
-              <h3 className="text-xl font-semibold mt-4 mb-2">Assistant(e) de direction (BAC +2)</h3>
+              <h3 className="text-xl font-semibold mt-4 mb-2">Assistant(e) de direction <br />(BAC +2)</h3>
               <p className="text-gray-600 mb-4">
                 Assure le soutien des équipes dirigeantes
                 <br />
