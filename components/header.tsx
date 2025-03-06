@@ -56,7 +56,7 @@ export function Header() {
       >
         <Link href="/" className={`flex items-center ${isScrolled ? "p-2" : ""}`}>
           <Image
-            src="https://we-teach.fr/wp-content/uploads/2024/12/cropped-w-300x71.png"
+            src="cropped-w-300x71.png"
             alt="WeTeach Logo"
             width={isScrolled ? 120 : 140}
             height={isScrolled ? 30 : 33}

@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { BarChart, Heart, FileText, Calculator, Mail, ExternalLink } from "lucide-react"
+import Link from "next/link"
 
 export default function FuturPartenaire() {
   return (
@@ -147,14 +148,14 @@ export default function FuturPartenaire() {
             le développement de vos collaborateurs.
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-            <a
-              href="mailto:contact@we-teach.fr"
+            <Link
+              href="/contact"
               className="bg-white text-wet-redwood py-4 px-10 rounded-md hover:bg-gray-100 transition-colors font-medium w-full md:w-auto flex items-center justify-center"
             >
               <Mail className="mr-2" size={18} /> Contactez-nous
-            </a>
+            </Link>
             <a
-              href="/Brochure-2024.pdf"
+              href="/wp-content/uploads/2024/12/Brochure-2024.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-transparent border-2 border-white text-white py-4 px-10 rounded-md hover:bg-white hover:text-wet-redwood transition-colors font-medium w-full md:w-auto flex items-center justify-center"

@@ -523,12 +523,12 @@ export default function Home() {
               apprentis WeTEACH.
             </p>
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-              <a
-                href="mailto:contact@we-teach.fr"
+              <Link
+                href="/contact"
                 className="bg-white text-wet-redwood py-3 px-8 rounded-md hover:bg-gray-100 flex items-center justify-center transition-colors font-medium w-full md:w-auto"
               >
                 <Mail className="mr-2" size={18} /> Contactez-nous
-              </a>
+              </Link>
               <a
                 href="/Brochure-2024.pdf"
                 target="_blank"
