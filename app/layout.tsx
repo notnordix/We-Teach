@@ -7,17 +7,17 @@ import { Footer } from "@/components/footer"
 import { ContactButtons } from "@/components/contact-buttons"
 import { LogoCarousel } from "@/components/logo-carousel"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "WeTeach - Centre de formation pour apprentis",
   description: "WeTeach est un centre de formation pour apprentis spécialisé dans les métiers du tertiaire.",
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="fr">
@@ -29,6 +29,6 @@ export default function RootLayout({
         <ContactButtons />
       </body>
     </html>
-  )
+  );
 }
 

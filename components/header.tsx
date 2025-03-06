@@ -80,7 +80,11 @@ export function Header() {
       </div>
 
       {/* Main header */}
-      <header className="bg-transparent absolute top-0 left-0 right-0 z-40 py-4 px-6">
+      <header
+        className={`fixed top-0 left-0 right-0 z-40 py-4 px-6 transition-all duration-300 ${
+          isScrolled ? "bg-white shadow-md" : "bg-transparent"
+        }`}
+      >
         <div className="container mx-auto flex items-center">
           {/* Empty space for logo - takes 20% of the space */}
           <div className="w-1/5">{/* Logo is now in the fixed div above */}</div>
@@ -89,22 +93,28 @@ export function Header() {
           <nav className="hidden lg:flex items-center justify-evenly w-3/5">
             <Link
               href="/qui-sommes-nous"
-              className="text-white hover:text-wet-redwood transition-colors relative group"
+              className={`${isScrolled ? "text-gray-800" : "text-white"} hover:text-wet-redwood transition-colors relative group`}
             >
               Qui sommes-nous ?
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-wet-redwood group-hover:w-full transition-all duration-300"></span>
             </Link>
-            <Link href="/nos-formations" className="text-white hover:text-wet-redwood transition-colors relative group">
+            <Link
+              href="/nos-formations"
+              className={`${isScrolled ? "text-gray-800" : "text-white"} hover:text-wet-redwood transition-colors relative group`}
+            >
               Nos formations
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-wet-redwood group-hover:w-full transition-all duration-300"></span>
             </Link>
-            <Link href="/futur-apprenti" className="text-white hover:text-wet-redwood transition-colors relative group">
+            <Link
+              href="/futur-apprenti"
+              className={`${isScrolled ? "text-gray-800" : "text-white"} hover:text-wet-redwood transition-colors relative group`}
+            >
               Futur(e) apprenti(e)
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-wet-redwood group-hover:w-full transition-all duration-300"></span>
             </Link>
             <Link
               href="/futur-partenaire"
-              className="text-white hover:text-wet-redwood transition-colors relative group"
+              className={`${isScrolled ? "text-gray-800" : "text-white"} hover:text-wet-redwood transition-colors relative group`}
             >
               Futur(e) partenaire
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-wet-redwood group-hover:w-full transition-all duration-300"></span>
@@ -114,10 +124,10 @@ export function Header() {
           {/* PDF link - takes 20% of the space and is right-aligned */}
           <div className="hidden lg:flex w-1/5 justify-end">
             <a
-              href="/Brochure-2024.pdf"
+              href="/wp-content/uploads/2024/12/Brochure-2024.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-wet-redwood text-white py-2 px-4 rounded hover:bg-red-700 transition-colors flex items-center"
+              className={`${isScrolled ? "bg-wet-redwood text-white" : "bg-wet-redwood text-white"} py-2 px-4 rounded hover:bg-red-700 hover:text-white transition-colors flex items-center`}
             >
               <ExternalLink size={16} className="mr-2" /> Notre brochure
             </a>
@@ -125,7 +135,7 @@ export function Header() {
 
           {/* Mobile menu button */}
           <button
-            className="lg:hidden text-white ml-auto mobile-menu-button z-50"
+            className={`lg:hidden ${isScrolled ? "text-gray-800" : "text-white"} ml-auto mobile-menu-button z-50`}
             onClick={(e) => {
               e.stopPropagation()
               setMobileMenuOpen(!mobileMenuOpen)

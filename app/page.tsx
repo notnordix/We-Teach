@@ -29,9 +29,9 @@ export default function Home() {
         </div>
 
         {/* Right side - Images and links - Hidden on mobile */}
-        <div className="hidden md:flex w-full md:w-2/5 flex-col min-h-[90vh]">
+        <div className="hidden md:flex w-full md:w-2/5 flex-col min-h-[100vh]">
           {/* Images section */}
-          <div className="grid grid-cols-2 h-[60vh]">
+          <div className="grid grid-cols-2 h-[70vh]">
             <div className="relative overflow-hidden">
               <Image
                 src="/pexels-divinetechygirl-1181534-2.jpg?height=600&width=500"
@@ -56,15 +56,15 @@ export default function Home() {
           <div className="flex flex-row h-[30vh]">
             <Link
               href="/nos-formations"
-              className="bg-wet-blue w-full h-full group flex items-center px-8 transition-all duration-300 hover:bg-wet-blue/90"
+              className="bg-wet-blue w-full h-full group flex items-center px-3 transition-all duration-300 hover:bg-wet-blue/90"
             >
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-wet-blue rounded-full flex items-center justify-center text-white mr-4 border-2 border-white">
-                  <ArrowRight className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-300" />
+                  <ArrowRight className="w-12 h-6 transform group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
                 <div>
                   <h2 className="text-xl font-semibold text-white">Nos formations</h2>
-                  <p className="text-white/80 hidden lg:block">
+                  <p className="text-white/80 hidden lg:block text-sm">
                     Découvrez nos formations certifiantes pour booster votre carrière.
                   </p>
                 </div>
@@ -73,15 +73,15 @@ export default function Home() {
 
             <Link
               href="/futur-apprenti"
-              className="bg-wet-macadamia w-full h-full group flex items-center px-8 transition-all duration-300 hover:bg-wet-macadamia/90"
+              className="bg-wet-macadamia w-full h-full group flex items-center px-3 transition-all duration-300 hover:bg-wet-macadamia/90"
             >
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-wet-redwood rounded-full flex items-center justify-center text-white mr-4 border-2 border-white">
-                  <ArrowRight className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-300" />
+                  <ArrowRight className="w-12 h-6 transform group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
                 <div>
                   <h2 className="text-xl font-semibold text-wet-blue">Futur(e) apprenti(e)</h2>
-                  <p className="text-wet-blue/80 hidden lg:block">
+                  <p className="text-wet-blue/80 hidden lg:block text-sm">
                     Montez en compétences et étendez vos perspectives d'avenir.
                   </p>
                 </div>
