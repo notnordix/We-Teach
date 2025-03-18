@@ -127,7 +127,7 @@ export function Header() {
               href="/wp-content/uploads/2024/12/Brochure-2024.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className={`${isScrolled ? "bg-wet-redwood text-white" : "bg-wet-redwood text-white"} py-2 px-4 rounded hover:bg-red-700 hover:text-white transition-colors flex items-center`}
+              className={`${isScrolled ? "bg-wet-redwood text-white" : "bg-wet-redwood text-white"} py-2 px-4 rounded hover:bg-white hover:text-red-700 transition-colors flex items-center`}
             >
               <ExternalLink size={16} className="mr-2" /> Notre brochure
             </a>

@@ -28,7 +28,7 @@ export default function FuturApprenti() {
       </section>
 
       {/* Se former pour l'avenir */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-red-100">
         <div className="container mx-auto px-4 md:px-6 w-full md:w-4/5">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
@@ -53,7 +53,7 @@ export default function FuturApprenti() {
       </section>
 
       {/* Pourquoi WeTeach ? */}
-      <section className="py-16 md:py-20 bg-gray-50">
+      <section className="py-16 md:py-20 bg-red-100">
         <div className="container mx-auto px-4 md:px-6 w-full md:w-4/5">
           <h2 className="text-3xl font-semibold mb-12 font-tomato">Pourquoi WeTeach ?</h2>
 
@@ -99,7 +99,7 @@ export default function FuturApprenti() {
       </section>
 
       {/* Conserver son contrat */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-red-100">
         <div className="container mx-auto px-4 md:px-6 w-full md:w-4/5">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
@@ -139,7 +139,7 @@ export default function FuturApprenti() {
       </section>
 
       {/* Suis-je éligible ? */}
-      <section className="py-16 md:py-20 bg-wet-macadamia/20">
+      <section className="py-16 md:py-20 bg-red-100">
         <div className="container mx-auto px-4 md:px-6 w-full md:w-4/5">
           <h2 className="text-3xl font-semibold mb-12 text-center font-tomato">Suis-je éligible ?</h2>
 

@@ -184,7 +184,7 @@ export default function FAQ() {
       </section>
 
       {/* FAQ Content */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-red-100">
         <div className="container mx-auto px-4 md:px-6 w-full md:w-4/5">
           <div className="max-w-4xl mx-auto">
             <div className="mb-12">

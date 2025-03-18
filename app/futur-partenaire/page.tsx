@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { BarChart, Heart, FileText, Calculator, Mail, ExternalLink } from "lucide-react"
+import { BarChart, Heart, FileText, Calculator, Mail, ExternalLink, TrendingUp } from "lucide-react"
 import Link from "next/link"
 
 export default function FuturPartenaire() {
@@ -28,7 +28,7 @@ export default function FuturPartenaire() {
       </section>
 
       {/* Avantages Section */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-red-100">
         <div className="container mx-auto px-4 md:px-6 w-full md:w-4/5">
           <h2 className="text-3xl font-semibold mb-12 text-center font-tomato">
             Les avantages d'un partenariat avec WeTeach
@@ -121,8 +121,19 @@ export default function FuturPartenaire() {
             <div className="order-2 md:order-1">
               <h3 className="text-2xl font-semibold mb-4 font-tomato text-wet-light-grayish">SIMULATEUR URSSAF</h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Formez vos équipes tout en bénéficiant d'opportunités fiscales.
+                Formez vos équipes tout en bénéficiant d'opportunités fiscales. Utilisez le simulateur officiel de
+                l'URSSAF pour estimer les avantages financiers liés à l'embauche d'apprentis.
               </p>
+              <a
+                href="https://www.urssaf.fr/accueil/outils-documentation/simulateurs/cotisations-employeur.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center border-2 border-wet-blue text-wet-blue py-3 px-6 rounded-md hover:bg-wet-blue hover:text-white transition-all mt-4 group"
+              >
+                <TrendingUp className="mr-2 group-hover:animate-pulse" size={20} />
+                <span>Calculer vos avantages financiers</span>
+                <ExternalLink className="ml-2 h-4 w-4" />
+              </a>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-1 md:order-2">
               <Image

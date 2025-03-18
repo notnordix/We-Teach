@@ -7,24 +7,24 @@ import { Footer } from "@/components/footer"
 import { ContactButtons } from "@/components/contact-buttons"
 import { LogoCarousel } from "@/components/logo-carousel"
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "WeTeach - Centre de formation pour apprentis",
+  title: "WeTeach",
   description: "WeTeach est un centre de formation pour apprentis spécialisé dans les métiers du tertiaire.",
-};
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="fr">
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" />
       </head>
-      <body className="font-tomato flex flex-col min-h-screen">
+      <body className="font-body flex flex-col min-h-screen pattern-overlay">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
@@ -32,6 +32,6 @@ export default function RootLayout({
         <ContactButtons />
       </body>
     </html>
-  );
+  )
 }
 

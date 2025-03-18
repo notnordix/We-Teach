@@ -30,7 +30,7 @@ export default function QuiSommesNous() {
       </section>
 
       {/* Notre Pédagogie Section */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-red-100">
         <div className="container mx-auto px-4 md:px-6 w-full md:w-4/5">
           <div className="flex items-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold font-tomato">Notre Pédagogie</h2>
@@ -73,7 +73,7 @@ export default function QuiSommesNous() {
       </section>
 
       {/* Nos certifications Section */}
-      <section className="py-16 md:py-20 bg-gray-50">
+      <section className="py-16 md:py-20 bg-red-100">
         <div className="container mx-auto px-4 md:px-6 w-full md:w-4/5">
           <div className="flex items-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold font-tomato">Nos certifications</h2>
@@ -137,7 +137,7 @@ export default function QuiSommesNous() {
       </section>
 
       {/* Locaux et équipements Section */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-red-100">
         <div className="container mx-auto px-4 md:px-6 w-full md:w-4/5">
           <div className="flex items-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold font-tomato">Locaux et équipements</h2>
@@ -177,7 +177,7 @@ export default function QuiSommesNous() {
       </section>
 
       {/* Nos engagements Section */}
-      <section className="py-16 md:py-20 bg-gray-50">
+      <section className="py-16 md:py-20 bg-red-100">
         <div className="container mx-auto px-4 md:px-6 w-full md:w-4/5">
           <div className="flex items-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold font-tomato">Nos engagements</h2>

@@ -7,29 +7,31 @@ export default function Home() {
     <div className="flex flex-col">
       {/* Hero Section - Split layout */}
       <section className="flex flex-col md:flex-row">
-        {/* Left side - Red background with title and description */}
-        <div className="w-full md:w-3/5 relative flex items-center justify-center min-h-[90vh]">
+        {/* Left side - Image background with title and description */}
+        <div className="w-full md:w-7/12 relative flex items-center justify-center min-h-[100svh] md:min-h-[90vh]">
           <Image
-            src="/qsn4-1536x1536.png?height=1200&width=800"
-            alt="WeTeach Hero Background"
+            src="/arton3909.jpg?height=1200&width=2000"
+            alt="WeTeach Formation Background"
             fill
-            className="object-cover z-0"
+            className="object-cover"
             priority
           />
           <div className="absolute inset-0 bg-black/50"></div>
-          <div className="relative z-20 px-4 md:px-16 py-16 max-w-2xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-tomato text-white uppercase">
-              Révélez votre potentiel avec WeTeach<span className="text-wet-macadamia">.</span>
+          <div className="relative z-20 px-4 md:px-10 py-16 text-left">
+            <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold mb-6 font-tomato text-white uppercase leading-tight">
+              DÉVELOPPER LES COMPÉTENCES,
+              <br />
+              C'EST INVESTIR DANS L'AVENIR<span className="text-wet-macadamia">.</span>
             </h1>
             <p className="text-xl text-white">
-              Depuis 2023, WeTeach redonne le plaisir d'apprendre et d'exercer les métiers du tertiaire grâce à des
-              formations adaptées et accessibles.
+              Faites grandir vos talents : formez vos équipes avec des parcours rapides, flexibles et 100% pris en
+              charge.
             </p>
           </div>
         </div>
 
         {/* Right side - Images and links - Hidden on mobile */}
-        <div className="hidden md:flex w-full md:w-2/5 flex-col min-h-[100vh]">
+        <div className="hidden md:flex w-full md:w-5/12 flex-col min-h-[100svh]">
           {/* Images section */}
           <div className="grid grid-cols-2 h-[70vh]">
             <div className="relative overflow-hidden">
@@ -56,35 +58,39 @@ export default function Home() {
           <div className="flex flex-row h-[30vh]">
             <Link
               href="/nos-formations"
-              className="bg-wet-blue w-full h-full group flex items-center px-3 transition-all duration-300 hover:bg-wet-blue/90"
+              className="bg-[#6c110a] w-full h-full group flex items-center px-4 transition-all duration-300"
             >
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-wet-blue rounded-full flex items-center justify-center text-white mr-4 border-2 border-white">
-                  <ArrowRight className="w-12 h-6 transform group-hover:translate-x-1 transition-transform duration-300" />
+              <div className="flex flex-col">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-[#6599ba] rounded-full flex items-center justify-center text-white mr-4">
+                    <ArrowRight className="w-6 h-6 text-[#6c110a] font-bold transform group-hover:translate-x-1 transition-transform duration-300" />
+                  </div>
+                  <h2 className="text-xl font-semibold text-[#6599ba]">
+                    Nos formations<span className="text-white">.</span>
+                  </h2>
                 </div>
-                <div>
-                  <h2 className="text-xl font-semibold text-white">Nos formations</h2>
-                  <p className="text-white/80 hidden lg:block text-sm">
-                    Découvrez nos formations certifiantes pour booster votre carrière.
-                  </p>
-                </div>
+                <p className="text-white mt-2 text-sm">
+                  Découvrez nos formations certifiantes pour booster votre carrière.
+                </p>
               </div>
             </Link>
 
             <Link
               href="/futur-apprenti"
-              className="bg-wet-macadamia w-full h-full group flex items-center px-3 transition-all duration-300 hover:bg-wet-macadamia/90"
+              className="bg-[#e4c197] w-full h-full group flex items-center px-4 transition-all duration-300"
             >
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-wet-redwood rounded-full flex items-center justify-center text-white mr-4 border-2 border-white">
-                  <ArrowRight className="w-12 h-6 transform group-hover:translate-x-1 transition-transform duration-300" />
+              <div className="flex flex-col">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-[#284482] rounded-full flex items-center justify-center text-white mr-4">
+                    <ArrowRight className="w-6 h-6 text-[#e4c197] font-bold transform group-hover:translate-x-1 transition-transform duration-300" />
+                  </div>
+                  <h2 className="text-xl font-semibold text-[#284482]">
+                    Futur(e) partenaire<span className="text-white">.</span>
+                  </h2>
                 </div>
-                <div>
-                  <h2 className="text-xl font-semibold text-wet-blue">Futur(e) apprenti(e)</h2>
-                  <p className="text-wet-blue/80 hidden lg:block text-sm">
-                    Montez en compétences et étendez vos perspectives d'avenir.
-                  </p>
-                </div>
+                <p className="text-white mt-2 text-sm">
+                  Formez vos équipes tout en bénéficiant d'opportunités fiscales.
+                </p>
               </div>
             </Link>
           </div>
@@ -92,7 +98,7 @@ export default function Home() {
       </section>
 
       {/* Qui sommes nous? Section - Redesigned with the requested style */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-red-100">
         <div className="container mx-auto px-4 md:px-6 w-full md:w-4/5">
           <div className="flex items-center mb-12">
             <h1 className="text-4xl md:text-5xl font-semibold font-tomato">Qui sommes nous?</h1>
@@ -150,7 +156,7 @@ export default function Home() {
       </section>
 
       {/* Nos formations Section - Simplified layout */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-red-100">
         <div className="container mx-auto px-4 md:px-6 w-full md:w-4/5">
           <div className="flex items-center mb-12">
             <h1 className="text-3xl md:text-4xl font-semibold font-tomato">Nos formations</h1>
@@ -164,25 +170,31 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="flex flex-col text-center">
+            {/* Formation cards with consistent heights and alignment */}
+            <div className="flex flex-col text-center h-full">
               <div className="aspect-square relative overflow-hidden">
                 <Image src="/assistant-650x650.png" alt="Assistant(e) de direction" fill className="object-cover" />
               </div>
-              <h3 className="text-xl font-semibold mt-4 mb-2">Assistant(e) de direction <br />(BAC +2)</h3>
-              <p className="text-gray-600 mb-4">
-                Assure le soutien des équipes dirigeantes
-                <br />
-                RNCP 38667
-              </p>
-              <Link
-                href="https://www.francecompetences.fr/recherche/rncp/38667/"
-                className="border border-wet-blue text-wet-blue py-2 px-4 inline-block hover:bg-wet-blue hover:text-white transition-colors text-center"
-              >
-                En Savoir Plus
-              </Link>
+              <div className="flex flex-col flex-grow p-4">
+                <h3 className="text-xl font-semibold mb-2">Assistant(e) de direction</h3>
+                <p className="text-wet-blue font-medium mb-3">(BAC +2)</p>
+                <p className="text-gray-600 mb-4 flex-grow">
+                  Assure le soutien des équipes dirigeantes
+                  <br />
+                  RNCP 38667
+                </p>
+                <div className="mt-auto">
+                  <Link
+                    href="https://www.francecompetences.fr/recherche/rncp/38667/"
+                    className="border border-wet-blue text-wet-blue py-2 px-4 inline-block hover:bg-wet-blue hover:text-white transition-colors text-center w-full"
+                  >
+                    En Savoir Plus
+                  </Link>
+                </div>
+              </div>
             </div>
 
-            <div className="flex flex-col text-center">
+            <div className="flex flex-col text-center h-full">
               <div className="aspect-square relative overflow-hidden">
                 <Image
                   src="/negotiator-650x650.png"
@@ -191,21 +203,26 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold mt-4 mb-2">Négociateur technico-commercial (BAC +2)</h3>
-              <p className="text-gray-600 mb-4">
-                Pilote la croissance des relations clients
-                <br />
-                RNCP 39063
-              </p>
-              <Link
-                href="https://www.francecompetences.fr/recherche/rncp/39063/"
-                className="border border-wet-blue text-wet-blue py-2 px-4 inline-block hover:bg-wet-blue hover:text-white transition-colors text-center"
-              >
-                En Savoir Plus
-              </Link>
+              <div className="flex flex-col flex-grow p-4">
+                <h3 className="text-xl font-semibold mb-2">Négociateur technico-commercial</h3>
+                <p className="text-wet-blue font-medium mb-3">(BAC +2)</p>
+                <p className="text-gray-600 mb-4 flex-grow">
+                  Pilote la croissance des relations clients
+                  <br />
+                  RNCP 39063
+                </p>
+                <div className="mt-auto">
+                  <Link
+                    href="https://www.francecompetences.fr/recherche/rncp/39063/"
+                    className="border border-wet-blue text-wet-blue py-2 px-4 inline-block hover:bg-wet-blue hover:text-white transition-colors text-center w-full"
+                  >
+                    En Savoir Plus
+                  </Link>
+                </div>
+              </div>
             </div>
 
-            <div className="flex flex-col text-center">
+            <div className="flex flex-col text-center h-full">
               <div className="aspect-square relative overflow-hidden">
                 <Image
                   src="/grapich-designer-650x650.png"
@@ -214,21 +231,26 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold mt-4 mb-2">Infographiste - Metteur en Page (BAC)</h3>
-              <p className="text-gray-600 mb-4">
-                Optimise la création des supports visuels
-                <br />
-                RNCP 1267
-              </p>
-              <Link
-                href="https://www.francecompetences.fr/recherche/rncp/1267/"
-                className="border border-wet-blue text-wet-blue py-2 px-4 inline-block hover:bg-wet-blue hover:text-white transition-colors text-center"
-              >
-                En Savoir Plus
-              </Link>
+              <div className="flex flex-col flex-grow p-4">
+                <h3 className="text-xl font-semibold mb-2">Infographiste - Metteur en Page</h3>
+                <p className="text-wet-blue font-medium mb-3">(BAC)</p>
+                <p className="text-gray-600 mb-4 flex-grow">
+                  Optimise la création des supports visuels
+                  <br />
+                  RNCP 1267
+                </p>
+                <div className="mt-auto">
+                  <Link
+                    href="https://www.francecompetences.fr/recherche/rncp/1267/"
+                    className="border border-wet-blue text-wet-blue py-2 px-4 inline-block hover:bg-wet-blue hover:text-white transition-colors text-center w-full"
+                  >
+                    En Savoir Plus
+                  </Link>
+                </div>
+              </div>
             </div>
 
-            <div className="flex flex-col text-center">
+            <div className="flex flex-col text-center h-full">
               <div className="aspect-square relative overflow-hidden">
                 <Image
                   src="/manager-650x650.png"
@@ -237,21 +259,26 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold mt-4 mb-2">Responsable de petite et moyenne structure (BAC +2)</h3>
-              <p className="text-gray-600 mb-4">
-                Dirige et fait grandir une organisation
-                <br />
-                RNCP 38575
-              </p>
-              <Link
-                href="https://www.francecompetences.fr/recherche/rncp/38575/"
-                className="border border-wet-blue text-wet-blue py-2 px-4 inline-block hover:bg-wet-blue hover:text-white transition-colors text-center"
-              >
-                En Savoir Plus
-              </Link>
+              <div className="flex flex-col flex-grow p-4">
+                <h3 className="text-xl font-semibold mb-2">Responsable de petite et moyenne structure</h3>
+                <p className="text-wet-blue font-medium mb-3">(BAC +2)</p>
+                <p className="text-gray-600 mb-4 flex-grow">
+                  Dirige et fait grandir une organisation
+                  <br />
+                  RNCP 38575
+                </p>
+                <div className="mt-auto">
+                  <Link
+                    href="https://www.francecompetences.fr/recherche/rncp/38575/"
+                    className="border border-wet-blue text-wet-blue py-2 px-4 inline-block hover:bg-wet-blue hover:text-white transition-colors text-center w-full"
+                  >
+                    En Savoir Plus
+                  </Link>
+                </div>
+              </div>
             </div>
 
-            <div className="flex flex-col text-center">
+            <div className="flex flex-col text-center h-full">
               <div className="aspect-square relative overflow-hidden">
                 <Image
                   src="/food-crew-650x650.png"
@@ -260,21 +287,26 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold mt-4 mb-2">Employé polyvalent en restauration (CAP/BEP)</h3>
-              <p className="text-gray-600 mb-4">
-                Maîtrise les essentiels de la restauration
-                <br />
-                RNCP 38663
-              </p>
-              <Link
-                href="https://www.francecompetences.fr/recherche/rncp/38663/"
-                className="border border-wet-blue text-wet-blue py-2 px-4 inline-block hover:bg-wet-blue hover:text-white transition-colors text-center"
-              >
-                En Savoir Plus
-              </Link>
+              <div className="flex flex-col flex-grow p-4">
+                <h3 className="text-xl font-semibold mb-2">Employé polyvalent en restauration</h3>
+                <p className="text-wet-blue font-medium mb-3">(CAP/BEP)</p>
+                <p className="text-gray-600 mb-4 flex-grow">
+                  Maîtrise les essentiels de la restauration
+                  <br />
+                  RNCP 38663
+                </p>
+                <div className="mt-auto">
+                  <Link
+                    href="https://www.francecompetences.fr/recherche/rncp/38663/"
+                    className="border border-wet-blue text-wet-blue py-2 px-4 inline-block hover:bg-wet-blue hover:text-white transition-colors text-center w-full"
+                  >
+                    En Savoir Plus
+                  </Link>
+                </div>
+              </div>
             </div>
 
-            <div className="flex flex-col text-center">
+            <div className="flex flex-col text-center h-full">
               <div className="aspect-square relative overflow-hidden">
                 <Image
                   src="/accountant-650x650.png"
@@ -283,25 +315,30 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold mt-4 mb-2">Gestionnaire comptable et fiscal (BAC +2)</h3>
-              <p className="text-gray-600 mb-4">
-                Orchestre les finances d'une organisation
-                <br />
-                RNCP 31677
-              </p>
-              <Link
-                href="https://www.francecompetences.fr/recherche/rncp/31677/"
-                className="border border-wet-blue text-wet-blue py-2 px-4 inline-block hover:bg-wet-blue hover:text-white transition-colors text-center"
-              >
-                En Savoir Plus
-              </Link>
+              <div className="flex flex-col flex-grow p-4">
+                <h3 className="text-xl font-semibold mb-2">Gestionnaire comptable et fiscal</h3>
+                <p className="text-wet-blue font-medium mb-3">(BAC +2)</p>
+                <p className="text-gray-600 mb-4 flex-grow">
+                  Orchestre les finances d'une organisation
+                  <br />
+                  RNCP 31677
+                </p>
+                <div className="mt-auto">
+                  <Link
+                    href="https://www.francecompetences.fr/recherche/rncp/31677/"
+                    className="border border-wet-blue text-wet-blue py-2 px-4 inline-block hover:bg-wet-blue hover:text-white transition-colors text-center w-full"
+                  >
+                    En Savoir Plus
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Futur(e) apprenti(e) Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-red-100">
         <div className="container mx-auto px-4 md:px-6 w-full md:w-4/5">
           <div className="flex items-center mb-12">
             <h1 className="text-3xl md:text-4xl font-semibold font-tomato">Futur(e) apprenti(e)</h1>
@@ -362,8 +399,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Futur(e) partenaire Section - with image on right and SVG in middle */}
-      <section className="py-20 bg-white">
+      {/* Futur(e) partenaire Section */}
+      <section className="py-20 bg-red-100">
         <div className="container mx-auto px-4 md:px-6 w-full md:w-4/5">
           <div className="flex items-center mb-12">
             <h1 className="text-3xl md:text-4xl font-semibold font-tomato">Futur(e) partenaire</h1>

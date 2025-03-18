@@ -28,7 +28,7 @@ export default function NosFormations() {
       </section>
 
       {/* Introduction */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-red-100">
         <div className="container mx-auto px-4 md:px-6 w-full md:w-4/5">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-semibold mb-6 font-tomato">Notre approche pédagogique</h2>
@@ -69,7 +69,7 @@ export default function NosFormations() {
       </section>
 
       {/* Formations */}
-      <section className="py-16">
+      <section className="py-16 bg-red-100">
         <div className="container mx-auto px-4 md:px-6 w-full md:w-4/5">
           <h2 className="text-3xl font-semibold mb-12 text-center font-tomato">Découvrez nos formations</h2>
 

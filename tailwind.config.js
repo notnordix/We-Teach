@@ -19,7 +19,9 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        tomato: ["Tomato Grotesk", "sans-serif"],
+        tomato: ["Outfit", "sans-serif"],
+        heading: ["Outfit", "sans-serif"],
+        body: ["Plus Jakarta Sans", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
