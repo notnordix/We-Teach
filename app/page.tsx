@@ -529,7 +529,7 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-wet-redwood/30 z-10"></div>
               <div className="relative z-20">
-                <h4 className="text-2xl font-semibold  mb-3">SIMULATEUR URSSAF</h4>
+                <h4 className="text-2xl font-semibold  mb-3">SIMULATEUR<br />URSSAF</h4>
                 <p className="text-sm text-gray-800">
                   Bénéficiez des opportunités
                   <br /> fiscales liées à la montée <br />
