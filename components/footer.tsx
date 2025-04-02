@@ -56,7 +56,7 @@ export function Footer() {
           {/* Logo on the left */}
           <Link href="/" className="inline-block">
             <Image
-              src="https://we-teach.fr/wp-content/uploads/2024/12/1-2-768x180.png"
+              src="/favicon.png"
               alt="WeTeach"
               width={100}
               height={23}

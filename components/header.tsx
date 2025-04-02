@@ -69,7 +69,7 @@ export function Header() {
       <div className="lg:hidden fixed z-50 top-4 left-6">
         <Link href="/" className="flex items-center">
           <Image
-            src="https://we-teach.fr/wp-content/uploads/2024/12/cropped-w-300x71.png"
+            src="/cropped-w-300x71.png"
             alt="WeTeach Logo"
             width={120}
             height={30}
@@ -81,7 +81,7 @@ export function Header() {
 
       {/* Main header */}
       <header
-        className={`fixed top-0 left-0 right-0 z-40 py-4 px-6 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-40 py-4 transition-all duration-300 ${
           isScrolled ? "bg-white shadow-md" : "bg-transparent"
         }`}
       >
@@ -150,7 +150,7 @@ export function Header() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-black/90 z-40 lg:hidden transition-opacity duration-300 mobile-menu ${
+        className={`fixed inset-0 bg-black z-40 lg:hidden transition-opacity duration-300 mobile-menu ${
           mobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >

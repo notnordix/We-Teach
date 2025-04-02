@@ -287,7 +287,7 @@ export default function NosFormations() {
             <div className="grid grid-cols-1 md:grid-cols-3">
               <div className="relative h-64 md:h-auto">
                 <Image
-                  src="/accountant-3650x650.png"
+                  src="/accountant-650x650.png"
                   alt="Gestionnaire comptable et fiscal"
                   fill
                   className="object-cover"
